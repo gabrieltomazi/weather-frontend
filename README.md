@@ -70,9 +70,3 @@ Como o projeto é construído apenas com tecnologias nativas (*HTML, CSS, JS*), 
    Basta abrir o arquivo `index.html` diretamente no seu navegador de preferência ou utilizar a extensão **Live Server** no VS Code para rodar um servidor de desenvolvimento local.
 
 ---
-
-## 🌐 Deploy no GitHub Pages
-
-O deploy desta aplicação está configurado e disponível online via **GitHub Pages**. Você pode acessar o site publicado através do seguinte link:
-
-👉 [Clima BR - Acessar Online](https://gabrieltomazi.github.io/weather-frontend/)
