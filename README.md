@@ -70,3 +70,6 @@ Como o projeto é construído apenas com tecnologias nativas (*HTML, CSS, JS*), 
    Basta abrir o arquivo `index.html` diretamente no seu navegador de preferência ou utilizar a extensão **Live Server** no VS Code para rodar um servidor de desenvolvimento local.
 
 ---
+
+## ✒️ Autor
+Desenvolvido por Gabriel Tomazi —   [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gabriel-tomazi/)
