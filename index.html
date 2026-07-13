@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clima BR - Previsão do tempo em tempo real</title>
+  <meta name="description"
+    content="Consulte a previsão do tempo de qualquer cidade brasileira em tempo real, gerencie seus favoritos e acompanhe seu histórico de buscas de clima." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <nav class="main-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" id="navLogo">☁️ Clima BR</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active" id="navLinkHome">Início</a>
+        <a href="favoritos.html" class="nav-link" id="navLinkFavorites">Favoritos</a>
+        <a href="historico.html" class="nav-link" id="navLinkHistory">Histórico</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="app-container">
+    <header class="app-header">
+      <h1>☁ Clima BR</h1>
+      <p>Consulta em tempo real via HG Brasil</p>
+    </header>
+
+    <div class="dashboard-layout">
+      <!-- Seção de Consulta e Resultados -->
+      <section class="main-section">
+        <form id="searchForm" class="search-bar">
+          <input type="text" id="cityInput" placeholder="Digite uma cidade (ex: São Paulo)" autocomplete="off"
+            required />
+          <button type="submit" id="searchBtn">Consultar</button>
+        </form>
+
+        <p id="status"></p>
+
+        <!-- Card de Clima -->
+        <article class="weather-card" id="weatherCard">
+          <div class="card-top">
+            <div>
+              <div class="city-title-row">
+                <span class="city-name" id="cityName">—</span>
+                <button type="button" id="favoriteBtn" class="fav-btn" title="Adicionar aos favoritos"
+                  aria-label="Favoritar cidade">
+                  <span class="star-icon">☆</span>
+                </button>
+              </div>
+              <div class="city-state" id="cityState"></div>
+            </div>
+            <div class="weather-icon" id="weatherIcon">🌤</div>
+          </div>
+
+          <div class="temp-row">
+            <div class="temp-main" id="tempMain">—</div>
+            <div class="temp-unit">°C</div>
+          </div>
+          <div class="description" id="description"></div>
+
+          <div class="data-grid">
+
+            <div class="data-item">
+              <div class="data-label">Umidade</div>
+              <div class="data-value" id="humidity">—</div>
+            </div>
+            <div class="data-item">
+              <div class="data-label">Vento</div>
+              <div class="data-value" id="wind">—</div>
+            </div>
+
+          </div>
+
+          <div class="minmax">
+            Mín: <span id="tempMin">—</span> °C | Máx: <span id="tempMax">—</span> °C
+          </div>
+
+          <div class="forecast-title">Próximos dias</div>
+          <div class="forecast-list" id="forecastList"></div>
+
+          <div class="card-footer" id="updatedAt"></div>
+        </article>
+      </section>
+
+      <!-- Barra Lateral Informativa -->
+      <aside class="sidebar-section">
+        <div class="sidebar-card">
+          <h3>Sobre o Dashboard</h3>
+          <p>Consulte dados de temperatura, umidade, vento e chuva de qualquer município brasileiro integrado em tempo
+            real com a API HG Brasil.</p>
+        </div>
+        <div class="sidebar-card">
+          <h3>Dicas e Favoritos</h3>
+          <p>Adicione locais aos favoritos clicando na estrela ⭐ no card de clima. As informações serão salvas
+            localmente para o seu próximo acesso.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <p>&copy; 2026 Clima BR. Dashboard de Monitoramento Meteorológico para a Avaliação 03 de Front-End.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

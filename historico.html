@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Histórico de Consultas - Clima BR</title>
+  <meta name="description"
+    content="Veja suas consultas climáticas recentes e acesse rapidamente a previsão do tempo das cidades buscadas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Nav -->
+  <nav class="main-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" id="navLogo">☁️ Clima BR</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link" id="navLinkHome">Início</a>
+        <a href="favoritos.html" class="nav-link" id="navLinkFavorites">Favoritos</a>
+        <a href="historico.html" class="nav-link active" id="navLinkHistory">Histórico</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <main class="app-container">
+    <header class="app-header">
+      <h1>📜 Histórico</h1>
+      <p>Suas consultas climáticas recentes</p>
+    </header>
+
+    <div class="dashboard-layout">
+
+      <section class="main-section">
+        <!-- Div que aparece caso tenha algum histórico -->
+        <div class="history-actions" id="historyActionsContainer" style="display: none;">
+          <button class="btn-clear" id="clearHistoryBtn" onclick="clearHistory()">Limpar Histórico</button>
+        </div>
+
+        <div class="history-list" id="historyList">
+          <!-- Vai ser preenchido dinamicamente com o JavaScript -->
+        </div>
+      </section>
+
+      <!-- barra lateral -->
+      <aside class="sidebar-section">
+        <div class="sidebar-card">
+          <h3>Histórico de Consultas</h3>
+          <p>Esta aba armazena temporariamente as suas últimas 5 buscas no navegador para que você possa revisitá-las
+            com um único clique.</p>
+        </div>
+        <div class="sidebar-card">
+          <h3>Lembrete</h3>
+          <p>O histórico é salvo no `localStorage`. Ao limpar o histórico, todas as buscas salvas serão apagadas
+            permanentemente.</p>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <p>&copy; 2026 Clima BR. Dashboard de Monitoramento Meteorológico para a Avaliação 03 de Front-End.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

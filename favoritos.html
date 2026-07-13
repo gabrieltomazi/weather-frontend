@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cidades Favoritas - Clima BR</title>
+  <meta name="description"
+    content="Acesse rapidamente as informações climáticas das suas cidades favoritas salvas no Clima BR." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <nav class="main-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" id="navLogo">☁️ Clima BR</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link" id="navLinkHome">Início</a>
+        <a href="favoritos.html" class="nav-link active" id="navLinkFavorites">Favoritos</a>
+        <a href="historico.html" class="nav-link" id="navLinkHistory">Histórico</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="app-container">
+    <header class="app-header">
+      <h1>⭐ Favoritos</h1>
+      <p>Suas regiões salvas para consulta rápida</p>
+    </header>
+
+    <div class="dashboard-layout">
+      <!-- seção principal -->
+      <section class="main-section">
+        <div class="favorites-grid" id="favoritesGrid">
+          <!-- Será preenchido dinamicamente -->
+        </div>
+      </section>
+
+      <!-- Barra Lateral -->
+      <aside class="sidebar-section">
+        <div class="sidebar-card">
+          <h3>Gerenciar Favoritos</h3>
+          <p>Nesta página você visualiza as últimas condições das cidades adicionadas. Use o atalho para conferir os dados atualizados ou removê-los.</p>
+        </div>
+        <div class="sidebar-card">
+          <h3>Consulta Completa</h3>
+          <p>Clique no botão "Ver Clima" para ser redirecionado à página inicial e carregar a previsão completa para os próximos 5 dias.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <p>&copy; 2026 Clima BR. Dashboard de Monitoramento Meteorológico para a Avaliação 03 de Front-End.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
